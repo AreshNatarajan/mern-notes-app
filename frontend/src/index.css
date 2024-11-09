@@ -1,0 +1,144 @@
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Shadows+Into+Light&family=Varela+Round&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+*{
+  font-family: "IBM Plex Mono", monospace;
+  margin: 0px;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.listImg{
+  max-width: 80px;
+}
+
+.list{
+  transition: 0.2s;
+}
+
+.list:hover{
+  transform: scale(1.03);
+}
+input, textarea, select{
+  outline: none;
+  border-radius: 8px;
+  border: none;
+}
+.count{
+  transition: 1s;
+}
+.count:hover{
+  transform: scale(1.03);
+}
+select{
+  padding: 10px;
+  font-size: 13px;
+}
+option{
+  outline: none;
+  border: none;
+  margin: 10px;
+  font-size: 13px;
+  border-radius: 8px;
+}
+.note:hover{
+  transform: scale(1.04);
+}
+.newNote{
+  background-color: yellow;
+}
+.notes{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.note{
+  max-width: 200px;
+  min-height: 150px;
+  overflow-wrap: break-word;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.bg-icon{
+  background-color: aliceblue;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.btn_tick{
+  background-color: white;
+  outline: none;
+  border: 1px solid white;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.data{
+  font-size: 12px;
+}
+
+.counts{
+  height: 150px;
+  border-radius: 8px;
+}
+
+.mode_img{
+  max-width: 50px;
+}
+
+.modal_msg{
+  min-height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  background: transparent;
+  transition: 1s;
+}
+
+
+
+.modal-box{
+  margin-top: 30px;
+  max-width: 400px;
+  background-color: antiquewhite;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+
+}
+
+/* .container{
+  min-height: 100vh;
+} */
+
+@media (max-width:760px){
+  .listImg{
+    width: 50px;
+  }
+  .mode_img{
+    max-width: 30px;
+  }
+}

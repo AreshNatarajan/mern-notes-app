@@ -1,0 +1,62 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Varela+Round&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Shadows+Into+Light&family=Varela+Round&display=swap'); */
+body{
+   background-color: #0B192C;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 100;
+}
+
+/* .container{
+    position: relative;
+}
+
+.popUp{
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    display: none;
+}
+
+
+.activePopUp{
+    display: flex;
+}
+
+
+::placeholder{
+    color: white;
+}
+
+.icon{
+    font-size: 18px;
+}
+
+.count{
+    color: white;
+    margin-right: 5px;
+    font-size: 18px;
+    background-color:#1E3E62;
+    padding: 6px 8px;
+    border-radius: 8px;
+}
+.data-from{
+    flex: 1;
+    padding: 8px;
+    outline: none;
+    border: none;
+    background-color: #1E3E62;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.data-from:focus{
+    outline: #0B192C ;
+    border: #0B192C;
+}
+ */
+
