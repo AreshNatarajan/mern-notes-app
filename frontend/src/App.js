@@ -8,7 +8,7 @@ function App() {
   const [notes, setNotes] = useState([])
   const [isLight, setIsLight] = useState(false);
   useEffect(()=>{
-    axios.get('http://localhost:5000/notes/api/read').then((res)=>{
+    axios.get('https://mern-notes-app-63ut.onrender.com/notes/api/read').then((res)=>{
     setNotes(res.data.data)
     }).catch((err)=>{
     })

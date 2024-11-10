@@ -43,7 +43,7 @@ function NoteList({ notes, isLight }) {
     const b = Math.floor(Math.random() * 255); // Blue (0-127)
     const darkColor = `rgb(${r}, ${g}, ${b})`;
     axios
-      .post("http://localhost:5000/notes/api/post", { title: title, content: content, category: categoryValue, color: darkColor }).then((res) => {
+      .post("https://mern-notes-app-63ut.onrender.com/notes/api/post", { title: title, content: content, category: categoryValue, color: darkColor }).then((res) => {
         console.log(res);
         setMsg(res.data.message);
         setIsMsg(!isMsg)
@@ -57,7 +57,7 @@ function NoteList({ notes, isLight }) {
   }
 
   const handleUpdateData = async (item) => {
-    await axios.put(`http://localhost:5000/notes/api/edit/${item._id}`, { title: title, content: content, category: categoryValue }).then((res) => {
+    await axios.put(`https://mern-notes-app-63ut.onrender.com/notes/api/edit/${item._id}`, { title: title, content: content, category: categoryValue }).then((res) => {
       setMsg(res.data.message);
       setIsMsg(!isMsg)
       setTimeout(() => {
@@ -70,7 +70,7 @@ function NoteList({ notes, isLight }) {
 
   const handleFinished = (item) => {
     const finished = item.finished
-    axios.put(`http://localhost:5000/notes/api/updatefinished/${item._id}`, { finished: !finished }).then((res) => {
+    axios.put(`https://mern-notes-app-63ut.onrender.com/notes/api/updatefinished/${item._id}`, { finished: !finished }).then((res) => {
       setMsg(res.data.message);
       setIsMsg(!isMsg)
       setTimeout(() => {
@@ -84,7 +84,7 @@ function NoteList({ notes, isLight }) {
 
   const handleDelete = async (id) => {
     await axios
-      .delete(`http://localhost:5000/notes/api/delete/${id}`)
+      .delete(`https://mern-notes-app-63ut.onrender.com/notes/api/delete/${id}`)
       .then(res => {
         setMsg(res.data.message);
         setIsMsg(!isMsg)
