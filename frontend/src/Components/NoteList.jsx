@@ -159,7 +159,7 @@ function NoteList({ notes, isLight }) {
                     <option value="travel">Travel</option>
                     <option value="health">Health</option>
                     <option value="financial">Financial</option>
-                    <option value="financial">Work</option>
+                    <option value="work">Work</option>
                       </select>
                       <button onClick={() => handleUpdateData(item)} className="btn">
                         Update
